@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Target Lab | ICS3U</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="browser.js" defer></script>
+  <script src="vendor/chs-0.3.5.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="masthead"><span class="brand">ICS3U <span>/</span> GAME LAB</span><span class="edition">STARTER 01</span></header>
+    <section class="intro"><p class="eyebrow">PLAY IT. CHANGE IT. MAKE IT YOURS.</p><h1>Target Lab<span>.</span></h1><p>A small JavaScript game with plenty of room for your ideas.</p></section>
+    <div class="layout">
+      <section class="game-panel" aria-label="Target game">
+        <div class="scoreboard"><div><span class="metric-label">SCORE</span><strong id="score">0</strong></div><div><span class="metric-label">SECONDS LEFT</span><strong id="time">30</strong></div><div><span class="metric-label">SESSION BEST</span><strong id="best">0</strong></div></div>
+        <div class="canvas-scroll"><canvas id="game" width="480" height="360" aria-label="Target game: click the coloured circle during a round">Your browser needs canvas support to display the game.</canvas></div>
+        <div class="controls"><button id="start" type="button" disabled>Start round</button><p id="status" role="status">Loading game...</p></div>
+        <p class="hint">Click the target to score. Press <kbd>R</kbd> to restart. Completed scores last until you refresh.</p>
+        <div id="error" role="alert" hidden><strong>The game needs a fix.</strong><pre id="error-detail"></pre><p>Check your last edit in game.js, save, and refresh.</p></div>
+      </section>
+      <aside>
+        <section class="lesson-card"><p class="eyebrow">YOUR FIRST REMIX</p><h2>Change one thing.</h2><ol><li>Open <code>game.js</code>.</li><li>Find <b>CHANGE THESE FIRST</b>.</li><li>Change a value, save, and refresh.</li><li>Predict, test, and explain the difference.</li></ol><div class="experiment"><b>Try this</b><p>Make the target smaller. Does the game become harder? What would make that a fair test?</p></div></section>
+        <section class="history-card"><h2>Round notebook</h2><p id="history">No completed rounds yet.</p><p class="small">This list comes from an array in your program.</p></section>
+        <a class="doc-link" href="STUDENT-CHALLENGES.md">Student challenges &rarr;</a>
+      </aside>
+    </div>
+    <footer>Built with the CodeHS JavaScript graphics library. Your next version starts in <code>game.js</code>.</footer>
+  </main>
+</body>
+</html>

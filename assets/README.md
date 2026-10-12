@@ -1,0 +1,1 @@
+Put your own images and sounds here when you extend the game. Keep file names simple, such as star.png. Credit the creators and check permission to use their work. The starter needs no image or sound files.
